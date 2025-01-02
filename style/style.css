@@ -572,12 +572,33 @@ html {
 /* Media query untuk perangkat dengan lebar maksimum 600px */
 @media (max-width: 600px) {
     .social-media {
-        flex-direction: column; /* Menyusun ikon secara vertikal di perangkat kecil */
-        gap: 5%; /* Mengatur jarak antar ikon di perangkat kecil */
-        align-items: center; /* Menempatkan ikon di tengah */
+        display: flex; /* Mengaktifkan flexbox */
+        flex-direction: column; /* Menyusun ikon secara vertikal */
+        gap: 20px; /* Mengatur jarak antar ikon secara vertikal */
+        align-items: center; /* Menempatkan ikon di tengah secara horizontal */
+        justify-content: center; /* Menjaga konten berada di tengah secara vertikal */
+        height: 100vh; /* Mengatur tinggi kontainer agar mengisi layar */
+        margin: 0; /* Menghilangkan margin default */
+        padding: 0; /* Menghilangkan padding default */
+        text-align: center; /* Menjaga semua konten di dalamnya rata tengah secara horizontal */
     }
-}
-
+    
+    .sosmed-ig,
+    .sosmed-github,
+    .sosmed-linkedin {
+        display: inline-block; /* Membuat setiap ikon tampil secara baris */
+        width: 50px; /* Menyesuaikan ukuran ikon */
+        height: 50px; /* Menyesuaikan ukuran ikon */
+        margin: 10px; /* Memberikan jarak antar ikon secara horizontal dan vertikal */
+        border-radius: 50%; /* Membuat ikon berbentuk bulat */
+        text-align: center; /* Menjaga ikon berada di tengah */
+        line-height: 50px; /* Menjaga ikon berada di tengah secara vertikal */
+        display: flex;
+        justify-content: center; /* Menjaga isi ikon berada di tengah secara horizontal */
+        align-items: center; /* Menjaga isi ikon berada di tengah secara vertikal */
+    }
+    
+    
 
 
 
