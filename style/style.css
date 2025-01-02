@@ -87,103 +87,508 @@ header ul li a:hover {
     display: none;
 }
 
-/* SOCIAL MEDIA ICONS */
-.sosmed-and-maps {
-    width: 50%;
+/* NAVBAR DESKTOP */
+
+/* MAIN HOME */
+.section-home {
+    position: absolute;
+    left: 100px;
+    right: 90px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
 }
 
-.sosmed-and-maps i {
-    font-size: 32px;
+.field-text-home {
+    width: 70%;
+}
+.nama-home{
     color: aqua;
-    transition: 0.3s;
+}
+.field-text-home h1 {
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -10px;
 }
 
-.sosmed-and-maps i:hover {
+.field-text-home h3 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.field-text-home h3 span {
     color: white;
 }
 
-/* MOBILE MEDIA QUERY */
+.field-text-home p {
+    font-family: 'Roboto', sans-serif;
+    max-width: 75%;
+}
+
+.field-image-home {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-image-home img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* HOME */
+
+/* ABOUT DESKTOP */
+.about {
+    padding: 100px 0;
+}
+
+.container-about {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 80px 70px;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 30px;
+}
+
+.container-about h1 {
+    color: aqua;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container-about h1 span {
+    color: white;
+}
+
+.container-about p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container-about p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+/* ABOUT DESKTOP */
+
+/* SKILLS DESKTOP */
+.skill {
+    padding: 80px 0;
+
+}
+
+.skill h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skill h1 {
+    color: aqua;
+}
+.skill span{
+    color: white;
+}
+
+.container-image-skill {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field-image-skill {
+    position: relative;
+    background-color: black;
+    width: 20%;
+    border: 2px solid aqua;
+    border-radius: 12px;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-image-skill span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 180px;
+    transform: scale(0, 1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+.field-image-skill:hover span {
+    transform: scale(1);
+}
+
+.image-skill {
+    width: 120px;
+}
+
+/* SKILLS DESKTOP */
+
+/* PROJECT DESKTOP */
+.project {
+    padding: 80px 0;
+}
+
+.project h1 {
+    font-size: 60px;
+    text-align: center;
+    color: aqua;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.project h1 span {
+    color: white;
+}
+
+.container-project {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.field-project {
+    width: 42%;
+    border-radius: 12px;
+    padding: 12px 40px 12px 12px;
+    background-color: black;
+    border: 1px solid aqua;
+    transition: transform .3s ease-in-out;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: max-content;
+    row-gap: 22px;
+    grid-template-areas: 
+    'main-project' 'technology-project';
+    transition: transform .3s;
+}
+
+.field-project:hover {
+    transform: translateY(-10px);
+}
+
+.link-to-project {
+    grid-area: main-project;
+    display: flex;
+    gap: 16px;
+}
+
+.field-project img {
+    border-radius: 8px;
+    width: 30%;
+    min-height: 120px;
+}
+
+.field-text-project {
+    width: 70%;
+    margin-top: 3px;
+}
+
+.field-text-project h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.field-text-project h3 {
+    color: aqua;
+}
+
+.description-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.technology-project {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    grid-area: technology-project;;
+}
+
+.technology-project ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid rgb(27, 137, 122);
+    color: aqua;
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.technology-project a:hover {
+    cursor: pointer;
+}
+
+/* PROJECT DESKTOP */
+
+/* CERTIFICATE DESKTOP */
+.certification {
+    padding: 80px 0 40px;
+
+}
+
+.certification h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: aqua;
+    margin-bottom: 40px;
+}
+
+.certification h1 span {
+    color: white;
+}
+
+.container-certificate {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 60px;
+}
+
+.field-certificate {
+    width: 27%;
+    height: 250px;
+    position: relative;
+}
+
+.field-certificate img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+
+.field-certificate .icon-eye {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    background-color: #666;
+    text-align: center;
+    line-height: 250px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.field-certificate:hover {
+    cursor: pointer;
+}
+
+.field-certificate:hover i {
+    opacity: 0.9;
+}
+
+.overlay-image-certificate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-image-certificate img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+/* CERTIFICATE DESKTOP */
+
+/* CONTACT DESKTOP */
+.container-contact {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-contact .sosmed-and-maps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.container-contact .domain-and-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 50%;
+}
+
+.social-media {
+    display: flex;
+    gap: 16px;
+}
+
+.social-media i {
+    font-size: 28px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #333;
+    color: aqua;
+    transition: 0.3s ease;
+}
+
+.social-media i:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.maps-contact {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.container-contact iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* CONTACT DESKTOP */
+
+/* FORM DESKTOP */
+.form-contact {
+    background-color: black;
+    border: 2px solid aqua;
+    width: 100%;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.form-contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: aqua;
+    margin-bottom: 16px;
+}
+
+.form-contact input,
+.form-contact textarea {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.form-contact button {
+    background-color: aqua;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-contact button:hover {
+    background-color: rgb(27, 137, 122);
+}
+
+/* FORM DESKTOP */
+
+/* MOBILE STYLE */
+
 @media (max-width: 600px) {
-    /* Social Media - Mobile */
-    .sosmed-and-maps {
-        flex-direction: column; /* Vertically aligned icons on small screens */
-        gap: 15px; /* Reduced gap between icons */
-        align-items: center; /* Center icons */
-    }
-
-    .sosmed-and-maps i {
-        font-size: 28px; /* Adjust icon size for mobile */
-    }
-
-    /* NAVBAR MOBILE */
-    header ul {
-        display: block;
-        top: -300px;
-        right: 0;
-        width: 100%;
-        margin: 0;
-        transition: all .7s;
-    }
-
-    .ul-active {
-        top: 70px;
-    }
-
-    header ul li {
-        display: block;
-        margin: 0px 0px;
-        padding: 8px;
-        border-bottom: 1px solid aqua;
-        background-color: black;
-        text-align: center;
-    }
-
-    header ul li:nth-child(1) {
-        border-top: 1px solid aqua;
-    }
-
-    header h2 {
-        left: 30px;
-    }
-
-    .hamburger-menu {
-        display: inline-block;
-        position: absolute;
-        right: 30px;
-        color: aqua;
-    }
-
-    /* HOME MOBILE */
-    .section-home {
-        flex-direction: column-reverse;
-        justify-content: center;
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         align-items: center;
-        top: 120px;
-        left: 0;
-        right: 0;
     }
 
-    .field-text-home {
+    .social-media i {
+        font-size: 32px;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: #333;
+        color: aqua;
+        transition: 0.3s ease;
+    }
+
+    .social-media i:hover {
+        background-color: aqua;
+        color: black;
+    }
+
+    .container-contact {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sosmed-and-maps {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .domain-and-contact {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    input, textarea {
         width: 100%;
     }
 
     .field-text-home h1 {
-        font-size: 42px;
-        margin-bottom: 60px;
+        font-size: 36px;
         text-align: center;
         line-height: 40px;
-    }
-
-    .field-text-home h1 span {
-        font-size: 36px;
-    }
-
-    .field-text-home h1 br {
-        display: inline-block;
     }
 
     .field-text-home h3 {
@@ -191,57 +596,17 @@ header ul li a:hover {
         text-align: center;
     }
 
-    .field-image-home {
-        width: 100%;
-    }
-
     .field-image-home img {
-        width: 270px;
+        width: 240px;
         margin-bottom: 18px;
-        margin-left: 0;
     }
 
-    .home .swipe-up {
-        bottom: 50px;
+    .field-project {
+        width: 90%;
+        padding: 12px;
     }
 
-    /* CONTACT MOBILE */
-    .container-contact {
-        width: 85%;
-        flex-wrap: wrap;
-    }
-
-    .sosmed-and-maps {
+    .field-project img {
         width: 100%;
-    }
-
-    .domain-and-contact {
-        flex-direction: column;
-        align-items: start;
-        gap: 16px;
-    }
-
-    .domain-contact {
-        flex-direction: row;
-    }
-
-    .domain-contact a {
-        margin-right: 24px;
-    }
-
-    .domain-contact:nth-child(3) a {
-        margin-right: 16px;
-    }
-
-    iframe {
-        height: 350px;
-    }
-
-    input {
-        margin-bottom: 32px;
-    }
-
-    textarea {
-        margin-bottom: 32px;
     }
 }
